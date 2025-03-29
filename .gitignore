@@ -1,0 +1,4 @@
+*.pyc
+__pycache__
+codelab_1/secrets/
+*.DS_Store

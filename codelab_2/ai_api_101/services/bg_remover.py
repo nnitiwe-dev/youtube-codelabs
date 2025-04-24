@@ -3,11 +3,8 @@ import requests
 import json
 from fastapi import UploadFile
 
-# This code snippet is part of a larger project that involves using the Stability AI API to remove backgrounds from images.
-# The code is structured to load API keys from a configuration file and define a function to remove backgrounds from images using the Stability AI API.
-
 # Load API keys from a JSON configuration file
-with open('codelab_1/secrets/config.json', 'r') as keys:
+with open('../secrets/config.json', 'r') as keys:
     secret_keys = json.load(keys)
 
 STABILITY_API_KEY = secret_keys["stability_ai_token"] 

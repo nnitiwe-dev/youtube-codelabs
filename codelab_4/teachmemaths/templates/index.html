@@ -1,0 +1,113 @@
+<!-- Teach Me Maths - HTML Template (Bootstrap + Jinja2 Friendly) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teach Me Maths</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css">
+  <style>
+    body { background-color: #f8f9fa; }
+    .chat-box { min-height: 10px; overflow-y: visible; margin-bottom: 1rem; }
+    .bubble-user { background-color: #d1e7dd; padding: 10px 15px; border-radius: 10px; margin: 5px 0; }
+    .bubble-ai { background-color: #e2e3e5; padding: 10px 15px; border-radius: 10px; margin: 5px 0; }
+    .math-rendered { font-size: 1.2rem; color: #212529; }
+  </style>
+</head>
+<body>
+    
+<div class="container py-5">
+  <div class="text-center mb-4" style="font-size: 2rem;">
+                    🧠
+                    <span class="katex-math">\( \boxed{\textsf{Teach~Me}} \)</span>
+                    <span class="katex-math" style="color: purple;">\( \mathbb{M}\! \mathbb{A}\! \mathbb{T}\! \mathbb{H}\! \mathbb{S} \)</span>
+                    </div>
+  
+
+        <div class="card">
+            <div class="card-body">
+                {% if response is not defined %}
+                <div style="margin: 150px;">
+                   <img src="/static/power.png" alt="Teach Me Maths Logo" class="img-fluid">
+
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                <div class="card text-white bg-primary h-100">
+                    <div class="card-body">
+                    <p class="card-text">“Solve \( \int x^2 dx \) step-by-step”</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card text-white bg-success h-100">
+                    <div class="card-body">
+                    <p class="card-text">“What is the derivative of \( \sin(x^2) \)?”</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card text-white bg-warning h-100">
+                    <div class="card-body">
+                    <p class="card-text">“Explain the concept of eigenvectors”</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card text-white bg-info h-100">
+                    <div class="card-body">
+                    <p class="card-text">“How can I master calculus in 30 days?”</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card text-white bg-danger h-100">
+                    <div class="card-body">
+                    <p class="card-text">“What math should I know before learning machine learning?”</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <div class="card-body">
+                    <p class="card-text">“What is the Fourier transform used for in real life?”</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            {% endif %}
+        <div class="chat-box" id="chatBox">
+            {% for message in response %}
+            <div class="{{ 'bubble-user text-end' if message.role == 'user' else 'bubble-ai' }}">
+                {% if message.type == 'user' %}
+                <strong>You:</strong> {{ message.message }}
+                {% else %}
+                <strong>AI:</strong> <br> <span class="math-rendered">{{ message.message | safe }}</span>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <form method="post" action="/" >
+            <div class="input-group">
+                <input type="text" name="question" class="form-control" placeholder="Ask a maths question..." required>
+                <button type="submit" class="btn btn-dark" style="border-bottom-right-radius: 70px; border-top-right-radius: 70px;">Ask</button>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ]
+    });">
+  </script>
+</body>
+</html>

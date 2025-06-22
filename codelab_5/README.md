@@ -5,8 +5,9 @@ Note:This tutorial is adapted from the excellent DeepLearning.AI short course on
 
 ## Section 1: Install Required Libraries
 To get started, install the necessary Python libraries. Run the following command in your terminal or Jupyter notebook cell to install the required dependencies quietly:
+```
 pip install livekit-agents[openai,silero,elevenlabs]==1.0.11 fastapi==0.115.8 uvicorn==0.34.0 python-dotenv==1.0.1 httpx==0.28.1 ipython==8.13.2 -q
-
+```
 
 ## Section 2: Set Up Environment Variables
 Set up your API keys and connection details as environment variables to securely connect to LiveKit, OpenAI, and ElevenLabs services. Create a .env file in your project directory or set the variables directly in your code (not recommended for production).
@@ -21,10 +22,6 @@ os.environ['LIVEKIT_API_SECRET'] = 'your_livekit_api_secret'
 ```
 
 Replace the placeholders with your actual API keys and LiveKit URL. Obtain these by:
-
-- OpenAI: Sign up at platform.openai.com and generate an API key.
-- ElevenLabs: Register at elevenlabs.io and get your API key.
-- LiveKit: Create a project at cloud.livekit.io to get your URL, API key, and secret.
 
 
 ## Section 3: Import Libraries
@@ -76,13 +73,6 @@ async def entrypoint(ctx: JobContext):
         agent=Assistant()
     )
 ```
-
-LLM: Uses OpenAI’s GPT-4o for generating responses.
-STT: Converts spoken audio to text using OpenAI’s speech recognition.
-TTS: Generates human-like speech from text using ElevenLabs.
-VAD: Detects when someone is speaking with Silero’s voice activity detection.
-Instructions: Defines the agent’s role as a voice-based assistant.
-Entrypoint: Connects the agent to a LiveKit room and starts a session for real-time interaction.
 
 
 ## Section 5: Setup App to Run

@@ -15,10 +15,11 @@ Whether you’re a student, hobbyist, or professional, these labs make it easy t
 
 ## 📚 Table of Contents  
 
-| Project | Subdirectory | Blog Article | YouTube Tutorial |
-|---------|--------------|--------------|------------------|
-| **Resume Parser with OpenAI Function Calling** <br/> Convert messy CVs into clean, structured JSON for databases and ATS systems. | [`codelab_1/`](./codelab_1) | [Extracting Data with OpenAI: An Introduction to Function Calling and JSON Formatting](https://blog.nnitiwe.io/p/extracting-data-with-openai-an-introduction) | Watch Video |
-| **More Coming Soon 🚀** | - | - | - |
+| Sn. | Project | Subdirectory | Blog Article | YouTube Tutorial |
+|---------|---------|--------------|--------------|------------------|
+|1.| **Resume Parser with OpenAI Function Calling** <br/> Convert messy CVs into clean, structured JSON for databases and ATS systems. | [`codelab_1/`](./codelab_1) | [Extracting Data with OpenAI: An Introduction to Function Calling and JSON Formatting](https://blog.nnitiwe.io/p/extracting-data-with-openai-an-introduction) | Watch Video |
+|2.| **AI-Powered Image Background Remover** <br/> Build image background remover with Stability AI's API. | [`codelab_2/`](./codelab_2) | [Building AI Services with FastAPI: An Image Background Remover Tutorial with Stable Diffusion](https://blog.nnitiwe.io/p/building-ai-services-with-fastapi) | [Watch Video](https://youtu.be/2sCXZULapzQ) |
+| - | **More Coming Soon 🚀** | - | - | - |
 
 ---
 

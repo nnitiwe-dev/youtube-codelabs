@@ -3,3 +3,5 @@ __pycache__
 codelab_1/secrets/
 codelab_2/secrets/
 *.DS_Store
+*.env
+

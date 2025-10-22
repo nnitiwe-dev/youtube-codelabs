@@ -1,4 +1,4 @@
-from python-dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv, find_dotenv
 import os
 import requests
 import base64
@@ -11,21 +11,22 @@ load_dotenv(find_dotenv())
 url = "https://api.novita.ai/v3/async/seedance-v1-lite-i2v"
 
 # Read and encode local image to base64
-image_path = "input/nnitiwe_cartoon.PNG"  # Change to your actual image path
+image_path = "input/nnitiwe_cartoon.jpg"  # Change to your actual image path
 with open(image_path, "rb") as img_file:
     image_base64 = base64.b64encode(img_file.read()).decode("utf-8")
+
+image_url = "https://img.freepik.com/premium-vector/presenting-black-male-teacher-presenter-82_905719-2960.jpg"
 
 # Set API key from environment variable
 api_key = os.getenv("NOVITA_API_KEY")
 
-def generate_video(prompt,image=image_base64,resolution="720p",aspect_ratio="16:9",last_image="",camera_fixed=True,seed=123,duration=123):
+def generate_video(prompt,image=image_url,resolution="720p",aspect_ratio="16:9",last_image="",camera_fixed=False,seed=123,duration=5):
     try:
         payload = {
             "prompt": prompt,
             "image": image,
             "resolution": resolution,
             "aspect_ratio": aspect_ratio,
-            "last_image": last_image,
             "camera_fixed": camera_fixed,
             "seed": seed,
             "duration": duration

@@ -1,4 +1,4 @@
-# 🎥 YouTube-CodeLabs  
+# 🎥 Blog & YouTube CodeLabs  
 
 Welcome to the companion repository for my **YouTube tutorials** and [**Nnitiwe AI Blog**](https://blog.nnitiwe.io)!  
 This repo contains **beginner-friendly, practical codelabs** that bring **AI and coding concepts** to life.  

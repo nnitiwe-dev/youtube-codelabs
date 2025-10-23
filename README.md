@@ -27,7 +27,7 @@ Whether you’re a student, hobbyist, or professional, these labs make it easy t
 |9.| **Text-to-Graph AI Agent** <br/> Create a text-to-graph AI agent with LLM, Pandas, Plotly, and Uber Data. | [`codelab_9/`](./codelab_9) | [Text-to-Graph AI Agent for Analysis & Insights (LLM + Pandas + Plotly + Uber Data)](https://blog.nnitiwe.io/p/building-genai-apps-9-text-to-graph) | Watch Video |
 |10.| **Open-Source LLM Monitoring, Tracing & Evaluation with Arize Phoenix** <br/> Create an open-source LLM monitoring, tracing, and evaluation with Arize Phoenix. | [`codelab_10/`](./codelab_10) | [Open-Source LLM Monitoring, Tracing & Evaluation with Arize Phoenix](https://blog.nnitiwe.io/p/open-source-ai-agent-monitoring-tracing) | Watch Video |
 |11.| **Building Reliable Data Extractors** <br/> Create a reliable data scraper with Apify’s Crawlee (Python SDK) for automated web unblocking. | [`codelab_11/`](./codelab_11) | [Building Reliable Data Extractors Using Apify’s Crawlee (Python SDK) for Automated Web Unblocking](https://blog.nnitiwe.io/p/building-reliable-data-extractors) | Watch Video |
-|12.| **Model Inference as a Service** <br/> Create a model inference as a service with Novita AI. | [`codelab_12/`](./codelab_12) | [Model Inference as a Service: Accelerating AI APIs with Serverless GPU Compute (Image-to-Video Example)](#) | Watch Video |
+|12.| **Model Inference as a Service** <br/> Create a model inference as a service with Novita AI. | [`codelab_12/`](./codelab_12) | [Model Inference as a Service: Accelerating AI APIs with Serverless GPU Compute (Image-to-Video Example)](https://blog.nnitiwe.io/p/model-inference-as-a-service-accelerating) | Watch Video |
 | - | **More Coming Soon 🚀** | - | - | - |
 
 ---

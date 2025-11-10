@@ -28,6 +28,7 @@ Whether you’re a student, hobbyist, or professional, these labs make it easy t
 |10.| **Open-Source LLM Monitoring, Tracing & Evaluation with Arize Phoenix** <br/> Create an open-source LLM monitoring, tracing, and evaluation with Arize Phoenix. | [`codelab_10/`](./codelab_10) | [Open-Source LLM Monitoring, Tracing & Evaluation with Arize Phoenix](https://blog.nnitiwe.io/p/open-source-ai-agent-monitoring-tracing) | Watch Video |
 |11.| **Building Reliable Data Extractors** <br/> Create a reliable data scraper with Apify’s Crawlee (Python SDK) for automated web unblocking. | [`codelab_11/`](./codelab_11) | [Building Reliable Data Extractors Using Apify’s Crawlee (Python SDK) for Automated Web Unblocking](https://blog.nnitiwe.io/p/building-reliable-data-extractors) | Watch Video |
 |12.| **Model Inference as a Service** <br/> Create a model inference as a service with Novita AI. | [`codelab_12/`](./codelab_12) | [Model Inference as a Service: Accelerating AI APIs with Serverless GPU Compute (Image-to-Video Example)](https://blog.nnitiwe.io/p/model-inference-as-a-service-accelerating) | Watch Video |
+|13.| **AI Image Editor** <br/> Create an AI image editor with Google GenAI. | [`codelab_13/`](./codelab_13) | [How to Build a Lightweight GenAI Image Editor with Nano Banana & FastAPI]() | Watch Video |
 | - | **More Coming Soon 🚀** | - | - | - |
 
 ---
